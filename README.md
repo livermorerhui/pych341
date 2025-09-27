@@ -6,6 +6,9 @@ CH341 是一个 USB 总线的转接芯片，通过 USB 总线提供异步串口�
 
 本库提供ch341 API的python绑定，底层API由WCH提供，详见[https://www.wch.cn/](https://www.wch.cn/)。
 
+### 注意（20250927）
+解压安装后，ch341.py里的 class 名称为 Ch341
+
 ### 安装
 ```
 python setup.py install
