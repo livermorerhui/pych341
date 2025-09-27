@@ -74,7 +74,9 @@ class Ch341:
         self.index = index
         self._eeprom_type = None
         self._i2c_speed = 0
-        self._spi_bit_order = SPI_LSBFIRST
+        # ==================== 这是被修改的地方 ====================
+        self._spi_bit_order = SPI_MSBFIRST
+        # =========================================================
         self._io_rw = 0x00
         self._io_out = 0x00
         self._callback = c_void_p(0)
